@@ -17,7 +17,7 @@ public class PlayerTestWrong
     }
 
     [Test]
-    [ExpectedException(typeof(Exception))]
+    [ExpectedException(typeof(NegativeHealthException))]
     public void NegativeHealth()
     {
         Player player = new Player();

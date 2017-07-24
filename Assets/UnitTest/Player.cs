@@ -11,7 +11,7 @@ public class Player
         Health -= value;
         if (Health < 0)
         {
-            throw new Exception();
+            throw new NegativeHealthException();
         }
     }
 
@@ -35,4 +35,9 @@ public class Player
     }
 
     #endregion Wrong Function
+}
+
+public class NegativeHealthException : ApplicationException
+{
+
 }
